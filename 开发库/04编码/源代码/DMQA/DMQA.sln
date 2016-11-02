@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{E42EEB6C-434D-41F4-B947-20ED7835B2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMQA.Web", "DMQA.Web\DMQA.Web.csproj", "{72E08D3A-2C54-4106-9C2D-A68448B8C5FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72E08D3A-2C54-4106-9C2D-A68448B8C5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E08D3A-2C54-4106-9C2D-A68448B8C5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E08D3A-2C54-4106-9C2D-A68448B8C5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E08D3A-2C54-4106-9C2D-A68448B8C5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72E08D3A-2C54-4106-9C2D-A68448B8C5FD} = {E42EEB6C-434D-41F4-B947-20ED7835B2BD}
+	EndGlobalSection
+EndGlobal
