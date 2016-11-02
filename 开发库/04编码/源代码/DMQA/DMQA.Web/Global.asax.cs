@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using DMQA.DataService.Service;
+using DMQA.DataService.Tool;
 using DMQA.Infrastructure.Ioc;
 using Ninject;
 
@@ -16,17 +18,27 @@ namespace DMQA.Web
         {
             AreaRegistration.RegisterAllAreas();
 
-            ControllerBuilder.Current.SetControllerFactory(new NinjectConfig(AddBindings));
+            //额外的初始化工作
+            Initialization();
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);       
         }
 
+        protected void Initialization()
+        {
+            //依赖注入
+            ControllerBuilder.Current.SetControllerFactory(new NinjectConfig(AddBindings));
+
+            //初始化映射模型
+            AutoMapperExtention.InitializationMapper();
+        }
+
         protected void AddBindings(IKernel ninjectKernel)
         {
             //todo:额外的注入代码
-            //ninjectKernel.Bind<IAdapter>().To<Adapter>();
+            ninjectKernel.Bind<IHomeService>().To<HomeService>();
         }
     }
 }
