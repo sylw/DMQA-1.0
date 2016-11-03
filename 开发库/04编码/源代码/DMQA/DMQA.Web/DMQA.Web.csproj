@@ -159,6 +159,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2964,6 +2965,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\tongji.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="TestData\listTree.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2988,6 +2990,8 @@
     <Content Include="Scripts\miniui\themes\olive2003\images\buttonedit\Thumbs.db" />
     <Content Include="Scripts\miniui\themes\olive2003\images\tree\Thumbs.db" />
     <Content Include="Views\Home\UserInfoManage.cshtml" />
+    <Content Include="Views\Demo\ListTree.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

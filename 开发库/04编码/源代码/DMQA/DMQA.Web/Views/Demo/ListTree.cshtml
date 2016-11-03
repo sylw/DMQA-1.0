@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "ListGrid";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListGrid</h2>
+<body>
+<div class="mini-toolbar" style="padding: 2px; width: 100%">
+    <a class="mini-button" iconCls="icon-add" onclick="onAddBefore()" plain="true" tooltip="">插入节点(前)</a>
+    <a class="mini-button" iconCls="icon-add" onclick="onAddAfter()" plain="true" tooltip="">插入节点(后)</a>
+    <a class="mini-button" iconCls="icon-add" onclick="onAddChildNode()" plain="true" tooltip="">插入子节点</a>
+    <a class="mini-button" iconCls="icon-edit" onclick="onEditNode()" plain="true">编辑节点</a>
+    <a class="mini-button" iconCls="icon-remove" onclick="onRemoveNode()" plain="true">删除节点</a>
+    <span class="separator"></span>
+    <a class="mini-button" iconCls="icon-save" onclick="saveData()" plain="true">保存</a>
+</div>
+<div id="tree1" class="mini-tree" url="../TestData/listTree.txt" style="width:200px;padding:5px;" 
+        showTreeIcon="true" textField="text" idField="id" parentField="pid" resultAsTree="false"  
+        allowDrag="true" allowDrop="true" >  
+</div>
+</body>
+
+<script type="text/javascript">
+    mini.parse();
+    var tree = mini.get("tree1");
+
+    function onAddBefore(e) {
+        var node = tree.getSelectedNode();
+        var newNode = {};
+        tree.addNode(newNode, "before", node);
+    }
+
+    function onAddAfter(e) {
+        var node = tree.getSelectedNode();
+        var newNode = {};
+        tree.addNode(newNode, "after", node);
+    }
+
+    function onAddChildNode(e) {
+        var node = tree.getSelectedNode();
+        var newNode = {};
+        tree.addNode(newNode, "add", node);
+    }
+
+    function onEditNode(e) {
+        var node = tree.getSelectedNode();
+        tree.beginEdit(node);
+    }
+
+    function onRemoveNode(e) {
+        var node = tree.getSelectedNode();
+
+        if (node) {
+            if (confirm("确定删除选中节点？")) {
+                tree.removeNode(node);
+            }
+        }
+    }
+
+    function onMoveNode(e) {
+        var node = tree.getSelectedNode();
+        alert("moveNode");
+    }
+
+    function saveData() {
+        var data = tree.getData();
+        var json = mini.encode(data);
+
+        alert("在线演示，不提供保存，下载开发包内有此功能。");
+    }
+</script>
