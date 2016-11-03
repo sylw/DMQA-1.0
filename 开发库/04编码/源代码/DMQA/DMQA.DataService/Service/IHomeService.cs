@@ -10,5 +10,11 @@ namespace DMQA.DataService.Service
         /// </summary>
         /// <returns></returns>
         List<UserInfo> GetUserInfos();
+
+        /// <summary>
+        /// 更新用户信息
+        /// </summary>
+        /// <param name="userInfoModels">用户信息集合</param>
+        void UpdateUserInfos(List<UserInfo> userInfoModels);
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DMQA.DataService.Service;
+using DMQA.DataService.ViewModels;
+using DMQA.Infrastructure.Tool;
 
 namespace DMQA.Web.Controllers
 {
@@ -14,6 +16,28 @@ namespace DMQA.Web.Controllers
         public HomeController(IHomeService service)
         {
             homeService = service;
+        }
+
+        /// <summary>
+        /// 获取用户信息列表
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult GetUserInfos()
+        {
+            return Json(homeService.GetUserInfos(), JsonRequestBehavior.AllowGet);
+        }
+
+        /// <summary>
+        /// 保存对用户信息列表的修改
+        /// </summary>
+        /// <param name="nodeParams"></param>
+        public void SaveUserInfos(string nodeParams)
+        {
+            List<UserInfo> models = JsonUtil.JsonToObject(nodeParams, typeof(List<UserInfo>)) as List<UserInfo>;
+            if (models != null && models.Count > 0)
+            {
+                homeService.UpdateUserInfos(models);
+            }
         }
 
         public ActionResult UserInfoManage()
