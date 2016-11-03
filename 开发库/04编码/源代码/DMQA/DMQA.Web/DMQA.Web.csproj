@@ -159,6 +159,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2966,6 +2967,7 @@
     <Content Include="Scripts\tongji.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="TestData\listTree.txt" />
+    <Content Include="TestData\outlookmenu.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2992,6 +2994,7 @@
     <Content Include="Views\Home\UserInfoManage.cshtml" />
     <Content Include="Views\Demo\ListTree.cshtml" />
     <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
