@@ -1,0 +1,983 @@
+﻿.frame-fit {
+    /* font*/
+    /*此样式用作自动调整页面中最后一个元素高度的标记*/
+}
+
+.frame-submit {
+    /*此样式用作识别自动提交的按钮*/
+}
+
+.frame-default {
+    /*此样式用作识别表单中按回车时的默认按钮*/
+}
+
+.frame-search {
+    /*此样式用作识别通用的搜索框*/
+}
+
+.frame-search-grid {
+    /*此样式用作识别可以搜索的mini-grid*/
+}
+
+.frame-search-tree {
+    /*此样式用作识别可以搜索的mini-tree*/
+}
+
+
+/*底部提示信息*/
+.alert {
+    padding: 0.3em;
+    padding-left: 2em;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-danger {
+    color: #b94a48;
+    background-color: #f2dede;
+    background: url(icons/warning.png) no-repeat center left;
+    border: 1px solid #eed3d7;
+}
+
+.alert-warning {
+    color: #c09853;
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+}
+
+.alert-success {
+    color: #468847;
+    background: url(icons/success.png) no-repeat center left;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+.alert-info {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+/*bootstrap样式调整*/
+   .form-horizontal .form-group {
+    margin-right:0;
+    margin-left: 0;
+}
+
+
+/*-------公共样式------*/
+/*字体样式*/
+*,.mini-grid-cell-inner, .mini-grid-headerCell-inner{
+    font-family: 'Microsoft YaHei' ,Arial, Verdana,Tahoma,sans-serif;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Microsoft YaHei',Arial, Verdana
+}
+h1 {
+    font-size: 20px; 
+}
+h2{
+    font-size:18px;
+}
+h3,h4{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:bold;
+}
+.header h1 {
+    background-repeat: no-repeat;
+    background-position: 8px;
+    padding: 15px 50px 15px;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Microsoft YaHei',Arial, Helvetica;
+}
+.description {
+    padding-bottom: 30px;
+    font-family: Verdana;
+}
+
+    .description h3 {
+        color: #CC0000;
+        margin: 0 30px 10px 0px;
+        padding: 45px 0 8px;
+        /*background:url(titleback.png) no-repeat scroll left bottom transparent*/
+        border-bottom: solid 1px #888;
+    }
+.clr{
+    clear: both;
+    overflow: hidden;
+}
+input{
+    margin:0 ;
+}
+label{
+    font-weight:normal;
+    height:23px;
+    line-height:23px;
+    margin-bottom:0px
+}
+img{
+    border:none;
+}
+.xline{
+    border-top:solid thin #ccc;
+}
+.graytext{
+    color:#ccc;
+}
+.right{
+    text-align:right;
+}
+.left{
+    text-align:left;
+}
+.badge{
+    background-color:#e01322;
+}
+.mini-button{
+    border-radius:3px;
+}
+.mini-outlookbar-border,
+.mini-splitter-border,
+.mini-splitter-pane {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing:content-box;
+}
+.btn{
+    border-radius:0;
+    height:24px;
+    padding:1px 8px;
+}
+.btn-default{
+    background:#eaeaea;
+}
+/*日历控件button*/
+.fc button{
+    height:24px !important;
+}
+.fc-state-default {
+    background: #fff !important;
+}
+.fc-state-active {
+    background-color: #2b7cd8 !important;
+    border-color: #2b7cd8 !important;
+    color: #fff !important;
+}
+/*------定义表单------*/
+.mini-textbox,
+.mini-buttonedit,
+.mini-textboxlist{
+    height:23px;
+}
+.mini-textbox-border,
+.mini-buttonedit-border,
+.mini-textboxlist-border{
+    height:21px;
+    border-color:#b3b3b3;
+}
+
+body .mini-textbox-focus .mini-textbox-border,
+.mini-buttonedit-focus .mini-buttonedit-border,
+body .mini-textboxlist-focus .mini-textboxlist-border,
+.mini-error.mini-textbox-focus .mini-errorIcon,
+.mini-error.mini-buttonedit-focus .mini-errorIcon,
+.mini-error.mini-textboxlist-focus .mini-errorIcon{
+    border-color:#77b2f0;
+}
+
+.mini-textbox-input,
+.mini-buttonedit-input{
+    font-size:14px;
+    height:21px;
+    line-height:21px;
+    font-family: 'Microsoft YaHei',Arial, Helvetica;
+}
+.mini-buttonedit-button,
+.mini-buttonedit-button-hover{
+    width:17px;
+    height:17px;
+}
+.mini-buttonedit-icon{
+    height:15px;
+    width:15px;
+}
+.mini-buttonedit-button-hover,
+.mini-buttonedit-button-hover .mini-buttonedit-button{
+    background:none !important;
+    background-color:red;
+}
+
+.mini-textbox-input::-webkit-input-placeholder,
+.mini-textbox-input:-woz-placeholder,
+.mini-textbox-input::-moz-placeholder,
+.mini-textbox-input:-ms-input-placeholder{
+    color:#d0d0d0;
+}
+/*textboxlist里的被选择项*/
+.mini-textboxlist-border{
+    border:1px solid #ccc;
+    border-right:none;
+    vertical-align:bottom;
+}
+.mini-textboxlist .mini-textboxlist-item{
+    height:19px;
+    line-height:15px;
+}
+.mini-textboxlist .mini-textboxlist-item,
+.mini-textboxlist .mini-textboxlist-item-hover {
+    border:none;
+    margin-bottom:0px
+}
+.mini-textboxlist .mini-textboxlist-inputLi{
+    margin-bottom:0;
+}
+
+.textlist-btn a:hover.mini-button{
+     background: url(images/icon/add.png) none no-repeat 50% 50%;
+}
+/*错误状态*/
+.mini-error .mini-textbox-border,
+.mini-error .mini-buttonedit-border,
+.mini-error .mini-textboxlist-border{
+    border-right:none;
+}
+.mini-error .mini-errorIcon{
+    border:1px solid #d3d3d3;
+    border-left:none;
+    height:21px;
+    width:19px;
+    margin-top:0px;
+    right:0px;
+    background-color:#FFFFE6;
+}
+.mini-error.mini-textboxlist .mini-errorIcon{
+    border-right:none;
+    height:24px;
+}
+.mini-error.mini-checkboxlist .mini-errorIcon{
+    border:none;
+    background-color:none;
+}
+
+
+/*只读状态*/
+.mini-textbox-readOnly,
+.mini-textbox-readOnly .mini-textbox-input {
+    background: #f8f8f8;
+}
+/*------login定义输入框------*/
+.login .mini-textbox {
+    width: 100%;
+    border-radius: 3px;
+    display:block;
+}
+.mini-required .mini-textbox-border,
+.mini-required .mini-buttonedit-border {
+    
+}
+.login .mini-error .mini-errorIcon,
+.login .mini-textbox-focus .mini-errorIcon{
+    border:1px solid #fff;
+}
+/*------定义button-----*/
+.mini-button{
+    border-radius:2px;
+}
+.mini-button-iconTop .mini-button-icon{
+    padding-top:26px;
+    background-position:50% 1px;
+}
+.login .mini-button,
+.login a:hover.mini-button{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0px;
+    margin-top: 3px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    color: #fff !important;
+}
+.login .mini-button-pressed, .login a:hover.mini-button-pressed,
+.login .mini-button-checked, .login a:hover.mini-button-checked,
+.login a.mini-button-popup, .login a:hover.mini-button-popup {
+    border: none;
+    padding: 10px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.shortcut_menu a:hover.mini-button,
+.shortcut_menu .mini-button
+ {
+    padding:0px;
+    text-decoration: none;
+    border-style:solid;
+    border:none;
+    background:none;
+
+}
+.login a.mini-button-disabled, .login a:hover.mini-button-disabled
+{
+    border:none;
+    padding:10px 0px;
+    color:#fff;
+    background:#1360b8 url(images/icon/disabled1.png) repeat-x 0 0px;      
+    cursor:default;
+}
+.login .mini-button-text {
+    color: #fff;
+    display: inline-block;
+}
+.login .loginButton {
+    font-size: 18px;
+    font-weight: bold;
+}
+.container-fluid.lg{
+     padding:7% 0 0; 
+ }
+.login {
+    margin: auto;
+    border-radius: 5px;
+}
+.logintitle {
+    text-align: center;
+    height: 73px;
+}
+    .logintitle .logo {
+        background-repeat:no-repeat;
+        background-position:0 10px;
+        display: inline-block;
+        text-align: left;
+        padding-left: 55px;
+        min-height: 52px;
+    }
+    .logintitle p {
+        margin: 0;
+        padding: 0;
+    }.logintitle p.p1 {
+            font-size: 28px;
+            padding: 18px 0 0 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logintitle p.p2 {
+            font-size: 14px;
+            padding-top:5px ;
+            text-transform: uppercase;
+        }
+.form_username,
+.form_password {
+    border:1px solid;
+    border-radius: 3px; 
+    padding: 10px 10px 10px 30px;
+    background-position:10px 50%;
+    background-repeat:no-repeat;
+}
+.showTips {
+    height: 20px;
+    color: red;
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+.login_RememberMe {
+    height: 36px;
+    display: inline;
+}
+    .login_RememberMe a {
+        text-decoration: none;
+    }
+    .login_RememberMe a:hover {
+        text-decoration: underline;
+    }
+/*语言选择区，wang加*/
+.language {
+    margin-top: 20px;
+}
+ .en_zh a.mini-button,
+ .en_zh a:hover.mini-button{
+     width: 100px;
+     padding:3px 0px;
+     margin-top: 3px;
+     text-align: center;
+     border-radius:3px;
+ }
+.en_zh .mini-button-text {
+    line-height: 22px;
+    color: #4e4e4e;
+    display: inline;
+}
+.labelTips {
+    float: left;
+    font-weight: 600;
+    color: #0068B7;
+    width: 16px;
+}
+.copyright {
+    margin:50px auto;
+    height: 60px;
+    width:600px;
+    text-align:center;
+    padding-left:157px;
+}
+    .copyright ul{
+        font-family: 'Microsoft YaHei',Arial,Tahoma;
+        padding: 0;
+        padding-top: 9px;
+        line-height: 19px;
+    }
+.shortcut_menu {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+    .shortcut_menu .mini-button-text {
+        position: relative;
+    }
+    .shortcut_menu .mini-button-text,
+    .shortcut_menu .mini-button-text span{
+        color:white;
+    }
+    .shortcut_menu .badge {
+        position: absolute;
+        right: 18px;
+        top: 0;
+    }
+.top_crumb, .crumb {
+    height:25px;
+    font-weight: bold;
+}
+    .top_crumb a:link, .crumb a:link,
+    .top_crumb a:visited, .crumb a:visited,
+    .top_crumb a:hover, .crumb a:hover {
+        text-decoration: none;
+    }
+     .top_crumb_left{
+        display:inline-block;
+        float:left;
+    }
+    .top_crumb_right{
+        display:inline-block;
+        float:right;
+    }
+    .top_crumb .btn-default{
+    background-image:none;
+    background-color:white;
+}
+.mini-outlookbar{
+}
+.mini-outlookbar-groupHeader .mini-tools {
+    right: 15px;
+}
+.mini-outlookbar .mini-outlookbar-groupHeader {
+    height:38px;
+    line-height:38px;
+}
+    .mini-outlookbar .mini-outlookbar-groupHeader:hover {
+        background-position: right top;
+    }
+.mini-outlookbar .mini-outlookbar-groupTitle {
+    height: 38px;
+    line-height: 38px;
+    padding-left: 35px;
+    background-position:12px 50%;
+    background-repeat:no-repeat;
+}
+    .mini-outlookbar .mini-outlookbar-groupTitle:hover {
+        text-decoration: none;
+    }
+.mini-outlookbar .mini-outlookbar-groupBody {
+    border-top:none;
+}
+.mini-outlookbar .mini-tree-nodetitle {
+    margin-top: 0px;
+    cursor: default;
+    white-space: nowrap;
+    height: 30px;
+}
+.mini-outlookbar .mini-tree-node-ecicon {
+    display: none;
+}
+.mini-outlookbar .mini-tree-nodetitle .mini-tree-nodeshow {
+    padding-left: 30px;
+}
+.mini-outlookbar .mini-tree-nodetext {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.mini-outlookbar .mini-tree-node-hover,
+.mini-outlookbar .mini-tree-node-hover .mini-tree-nodeshow,
+.mini-outlookbar .mini-tree-selectedNode .mini-tree-nodeshow{
+    border: none;
+}
+.mini-outlookbar .mini-tree-node-hover .mini-tree-nodeshow,
+.mini-outlookbar .mini-tree-selectedNode .mini-tree-nodeshow{
+    padding-left: 30px;
+    width: 100%;
+}
+/*nospacing样式作用于层层嵌套的样式，消除因嵌套了多层而变厚的间距和边框*/
+.nospacing.mini-splitter .mini-splitter-pane1, 
+.nospacing.mini-splitter .mini-splitter-pane2{
+    padding:0px;
+}
+.nospacing .mini-panel-border,
+.nospacing .mini-splitter-pane2-vertical,
+.nospacing .mini-splitter-border .mini-splitter-border,
+.nospacing .mini-tabs-bodys 
+{
+    border:none;
+}
+
+.nospacing .mini-toolbar{
+    border:none;
+}
+.nospacing .mini-panel-body,
+.nospacing .mini-tabs-bodys{
+    padding:0
+}
+.nospacing .mini-panel-border.mini-grid-border{
+    border:0;
+}
+.nospacing .mini-tabs .mini-panel-border.mini-grid-border,
+.nospacing .mini-panel-border.mini-grid-border{
+    border-top:1px solid #d3d3d3;
+}
+.nospacing .mini-tabs .mini-toolbar{
+    border-top:none;
+}
+/*选项卡-头部高度*/
+.mini-tab{
+    padding:5px 10px;
+}
+/*面板样式编辑*/
+.mini-panel-header{
+    padding:3px;
+    background:#f6f6f6;
+    font-weight:bold;
+}
+.mini-panel-collapse .mini-panel-header,
+ .mini-panel-header{
+    border-bottom:1px solid #d3d3d3;
+}
+
+/*关于主从表样式编辑*/
+.master-detail-form {
+}
+.master-detail-form-infoedit {
+    padding: 5px 0;
+    /*border-bottom: 1px solid #d3d3d3;*/
+}
+.master-detail-form-infoedit .mini-textbox,
+.master-detail-form-infoedit .mini-buttonedit{
+   width:100%;
+}
+.master-detail-form .col-xs-4,.master-detail-form .col-xs-8,.master-detail-form .col-xs-12,
+.master-detail-form .col-sm-2,.master-detail-form .col-sm-4,.master-detail-form .col-sm-6,.master-detail-form .col-sm-8,.master-detail-form .col-sm-9,.master-detail-form .col-sm-12,
+.master-detail-form .col-md-2,.master-detail-form .col-md-4,.master-detail-form .col-md-5,.master-detail-form .col-md-7,.master-detail-form .col-md-8,.master-detail-form .col-md-10,.master-detail-form .col-md-12,
+.master-detail-form .col-lg-2,.master-detail-form .col-lg-3,.master-detail-form .col-lg-5,.master-detail-form .col-lg-6,.master-detail-form .col-lg-7,.master-detail-form .col-lg-9,.master-detail-form .col-lg-10,.master-detail-form .col-lg-12
+{
+    padding:0 3px 3px;
+}
+.master-detail-form .mini-panel-toolbar{
+    background:white;
+}
+.boxcls{
+    width:100%;
+}
+.boxcls td{
+    padding-left:2px;
+    padding-right:2px;
+}
+
+/*弹框样式*/
+.mini-window {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #ccc;
+    -moz-box-shadow: 0 5px 15px #ccc;
+    -webkit-box-shadow: 0 5px 15px #ccc;
+}
+    
+    .mini-window .mini-panel-border {
+        border-radius: 5px;
+        border: 1px solid #cdcdcd;
+    }
+    .mini-window .mini-panel-header{
+        background: #eaeaea;
+        color: #2e2e2e;
+        font-weight: bold;
+        border-bottom: 1px solid #cdcdcd;
+        padding: 5px 5px;
+    }
+    .mini-window .mini-panel-viewport {
+        
+        background: white;
+    }
+    .mini-window .mini-layout-border {
+        border: none;
+    }
+.noborder.mini-toolbar {
+    border-bottom: none;
+}
+    .mini-panel .mini-tools{
+        top:8px;
+    }
+    
+.mini-window #form1 td,
+.cs-window-form tr {
+    height: 30px;
+}
+.popuplayer_button {
+    padding: 10px 0;
+}
+.cs-window .mini-panel-viewport {
+    padding: 0;
+}
+.cs-window .mini-panel-toolbar {
+    background: none;
+    border-bottom:solid 1px #E4E4E4;
+}
+.cs-window .mini-panel-toolbar,
+.cs-window .mini-panel-body,
+.cs-window .mini-panel-footer {
+   
+}
+.cs-window .mini-panel-footer {
+    background: #eff2f4;
+}
+.cs-window{
+    padding:5px 10px 0 10px;
+}
+.cs-window1 > .mini-splitter > .mini-splitter-border {
+    border: none;
+}
+.cs-window-foot{
+    margin:0 -10px;
+}
+    .cs-window-foot.mini-toolbar,
+    .cs-window1-foot.mini-toolbar {
+        padding: 5px 10px;
+        background: #eaeaea;
+        text-align: right;
+        border: 0;
+        border-top: 1px solid #cdcdcd;
+    }
+    .cs-window-foot.mini-toolbar {
+        margin-top: 5px;
+    }
+
+form .mini-splitter .mini-splitter-pane1,
+form .mini-splitter .mini-splitter-pane2{
+    padding:5px;
+}
+.mini-toolbar {
+    padding:3px;
+}
+/*由于bs与mini样式冲突，为保证搜索框高度一致而设定*/
+.mini-panel  .mini-toolbar .searchinfo *{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.searchinfo {
+    border-radius:15px;
+    width:200px;
+    float:right;
+}
+.searchinfo.mobile{
+    width:100%;
+    padding:5px;
+}
+    .searchinfo .hidden {
+        display: none;
+    }
+    .searchinfo .form-control,
+    .searchinfo .btn,
+    .frame-advquery .btn{
+        height:26px;
+        padding:2px 10px;
+    }
+.searchinfo .form-control{
+    border-radius:15px;
+}
+.searchinfo .input-group-btn>.btn{
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.tabsbuttons .searchinfo .form-control,
+.tabsbuttons .searchinfo .btn,
+.tabsbuttons .frame-advquery .btn{
+        height:26px;
+    }
+
+.mini-grid-border {
+    border-bottom: none;
+}
+/*控制表格高度*/
+.mini-grid-columns-view .mini-grid-table,
+.mini-grid-rowstable tr {
+    height: 30px;
+}
+.mini-grid-headerCell {
+    text-align: left;
+    font-weight: bold;
+    background:#f8f8f8;
+    }
+/*定义鼠标选中某单元格后编辑内容时单元格的与编辑框的距离*/
+.mini-grid-editwrap {
+    
+}
+/*验证时必填单元格提示的背景颜色颜色*/
+.mini-grid .mini-grid-cell-error,
+.mini-grid .mini-grid-cell-error.mini-grid-cell-selected{
+    background:#fee2f0;
+    border:1px solid #ff8c8c ;
+}
+/*定义分页控件*/
+.mini-grid-pager{
+    border-bottom:none;
+}
+.mini-pager{
+    height:28px;
+}
+.mini-pager .mini-textbox,
+.mini-pager .mini-buttonedit{
+    height:21px;
+}
+.mini-pager .mini-textbox-border,
+.mini-pager .mini-buttonedit-border{
+    height:19px;
+}
+.mini-pager-left {
+    padding:1px;
+}
+.mini-pager-left .mini-button-text{
+    vertical-align:initial;
+}
+.mini-grid-footer,
+.mini-grid-pager {
+    border-top: 1px solid  #d3d3d3;
+    border-bottom: 1px solid  #d3d3d3;
+    background: #ededed;
+}
+input.mini-pager-num{
+    height:17px;
+    line-height:17px;
+}
+/*替换miniui翻页控件图标*/
+.mini-pager-first{
+    background:url(../Images/pager-first.png) no-repeat;
+}
+.mini-pager-prev{
+    background:url(../Images/pager-prev.png) no-repeat;
+}
+.mini-pager-next{
+    background:url(../Images/pager-next.png) no-repeat;
+}
+.mini-pager-last{
+    background:url(../Images/pager-last.png) no-repeat;
+}
+.mini-pager-reload{
+    background:url(../Images/pager-reload.png) no-repeat;
+}
+.mini-pager  a:hover.mini-button{
+    background:none;
+    border:1px solid #ededed
+}
+
+
+/*定义鼠标选中某单元格后编辑内容时单元格的与编辑框的距离*/
+.mini-grid-editwrap {
+    padding:1px 0;
+}
+/*定义右上角导航信息页面样式*/
+.contentdiv {
+    margin: 0px 2%;
+    overflow: hidden;
+    padding-bottom:10px;
+}
+
+.topinfo, p{
+    padding: 0;
+    margin: 0;
+}
+    .topinfo p {
+        font-weight: bold;
+    }
+.titlediv {
+        padding: 15px 0px 5px 4px;
+    }
+.titleline {
+        border-bottom-width:2px;
+        border-bottom-style:solid;
+    }
+.contentline {
+        border-bottom-width:1px;
+        border-bottom-style:solid;
+        padding-bottom: 15px;
+    }
+.noline {
+        border-bottom: none !important;
+    }
+.contentdiv .contentdivl {
+        width: 140px;
+        text-align: right;
+        padding: 15px 0px 0px;
+        margin: 0px;
+        display:inline-block;
+        vertical-align:top;
+    }
+.contentdiv .contentdivr {
+        /*margin-left: 145px;*/
+        padding: 15px 0px 0px 10px;
+        display:inline-block;
+        vertical-align:top;
+    }
+.contentdivr img{
+        width:62px;
+        height:62px;
+    }
+/*头像设置-系统头像样式*/
+.useravatar div {
+    float: left;
+    width: 62px;
+    height: 61px;
+    margin: 2px 1px;
+    display: inline-block;
+}
+    .useravatar div table {
+        height: 66px;
+        width: 100%;
+    }
+    .useravatar div td {
+        text-align: center;
+        padding: 1px 0 0 0;
+        height: auto;
+    }
+.useravatar img {
+    width: 54px;
+    height: 54px;
+    margin: 2px 0 0 0;
+}
+    .useravatar img:hover {
+        border-width: 2px;
+        border-style: solid;
+    }
+/*头像设置-自定义头像样式*/
+.customavatarleft{
+    float:left;
+    width:240px;
+}
+.customavatarright{
+    float:right;
+    width:140px;
+    padding-left:10px;
+    text-align:center;
+}
+.customavatar .localimg{
+    padding:1px;
+    border-width:1px;
+    border-style:solid;
+    width:235px;
+    height:235px;
+}
+.customavatar .localimg img{
+    width:235px;
+    height:235px;
+}
+/*忘记密码*/
+.forgotpassword .content-title {
+    background: #fff;
+    border-bottom: 2px solid #f5f5f5;
+    color: #222;
+    font-size:20px;
+    padding:5px 20px 20px;
+    text-align: center;
+}
+.forgotpassword .form-group {
+    margin-bottom: 20px;
+}
+/*只有底部边框的表单input
+    .mini-textbox .mini-textbox-border,
+    .mini-error .mini-textbox-border,
+    .mini-required .mini-textbox-border,
+    .mini-buttonedit .mini-buttonedit-border,
+    .mini-buttonedit-focus .mini-buttonedit-border,
+    .mini-popupedit .mini-buttonedit-border,
+    .mini-buttonedit-popup .mini-buttonedit-border .mini-buttonedit-border,
+    .mini-datepicker .mini-buttonedit-border .mini-buttonedit .mini-buttonedit-border {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+*/
+
+/*嵌套左右分割器的左侧头部样式，参考mini-toolbar*/
+.top-title {
+    padding: 3px;
+    border-bottom: 1px solid #d3d3d3;
+    height: 32px;
+}
+/*定义fieldset详细内容样式*/
+fieldset {
+    border: 1px solid #d3d3d3;
+    border-radius: 0px;
+    margin:5px;
+    padding:0 0 10px 
+}
+
+legend {
+    width: initial;
+    border: hidden;
+    margin-bottom: 0;
+    margin-left:10px;
+    font-size: 14px;
+    padding:0 5px;
+}
+.mini-radiobuttonlist-td input{
+    width:initial !important;
+}

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string userConfigTheme = "blue"; //用户自定义主题 可选 blackness，blue，win7
+}
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -7,6 +10,9 @@
     <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/boot.js" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/theme/" + userConfigTheme + "/main.css")" id="userConfigTheme" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/global.css"/>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,6 +30,7 @@
                     <li>@Html.ActionLink("主页", "Index", "Home")</li>
                     <li>@Html.ActionLink("关于", "About", "Home")</li>
                     <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("用户信息管理", "UserInfoManage", "Home")</li>
                 </ul>
             </div>
         </div>

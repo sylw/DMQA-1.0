@@ -35,5 +35,7 @@ namespace DMQA.DataService.ViewModels
         public int? QCancelledCount { get; set; }
 
         public DateTime? CreatedDate { get; set; }
+
+        public string _state { get; set; }
     }
 }

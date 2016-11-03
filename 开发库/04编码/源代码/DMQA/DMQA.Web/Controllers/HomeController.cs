@@ -16,6 +16,11 @@ namespace DMQA.Web.Controllers
             homeService = service;
         }
 
+        public ActionResult UserInfoManage()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
