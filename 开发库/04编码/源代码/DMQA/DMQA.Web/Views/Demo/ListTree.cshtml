@@ -27,20 +27,51 @@
 
     function onAddBefore(e) {
         var node = tree.getSelectedNode();
+        if (node == null) {
+            node = tree.getRootNode();            
+            var childs = tree.getChildNodes(node);
+            node = childs[0];
+            console.log(node);
+        }
         var newNode = {};
         tree.addNode(newNode, "before", node);
+        tree.beginEdit(newNode);
     }
 
     function onAddAfter(e) {
         var node = tree.getSelectedNode();
+        if (node == null) {
+            node = tree.getRootNode();
+            var childs = tree.getChildNodes(node);
+            node = childs[0];
+            console.log(node);
+        }
         var newNode = {};
         tree.addNode(newNode, "after", node);
+        tree.beginEdit(newNode);
     }
 
     function onAddChildNode(e) {
         var node = tree.getSelectedNode();
-        var newNode = {};
-        tree.addNode(newNode, "add", node);
+        if (node == null) {
+            node = tree.getRootNode();
+            var childs = tree.getChildNodes(node);
+            node = childs[0];
+            console.log(node);
+        } else {
+            var childs = tree.getChildNodes(node);
+            childNode = childs[0];
+            if (childNode == null) {
+                var newNode = {};
+                tree.addNode(newNode, "add", node);
+                tree.beginEdit(newNode);
+            } else {
+                var newNode = {};
+                tree.addNode(newNode, "before", childNode);
+                tree.beginEdit(newNode);
+            }
+        }
+        
     }
 
     function onEditNode(e) {
