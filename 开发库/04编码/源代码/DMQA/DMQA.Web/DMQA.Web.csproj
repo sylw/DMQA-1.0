@@ -3017,10 +3017,6 @@
       <Project>{df528973-0999-4668-9578-dd239cd64280}</Project>
       <Name>DMQA.DataService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DMQA.Infrastructure\DMQA.Infrastructure.csproj">
-      <Project>{e859e5ac-c21d-49d0-8876-3536f5701026}</Project>
-      <Name>DMQA.Infrastructure</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

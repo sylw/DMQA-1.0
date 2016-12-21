@@ -52,24 +52,27 @@
     }
 
     function onAddChildNode(e) {
+        var newNode = {};
+        var childs,
+            childNode;
         var node = tree.getSelectedNode();
         if (node == null) {
             node = tree.getRootNode();
-            var childs = tree.getChildNodes(node);
-            node = childs[0];
-            console.log(node);
-        } else {
-            var childs = tree.getChildNodes(node);
+            childs = tree.getChildNodes(node);
             childNode = childs[0];
-            if (childNode == null) {
-                var newNode = {};
+            if (childNode == null)
                 tree.addNode(newNode, "add", node);
-                tree.beginEdit(newNode);
-            } else {
-                var newNode = {};
+            else
                 tree.addNode(newNode, "before", childNode);
-                tree.beginEdit(newNode);
-            }
+            tree.beginEdit(newNode);
+        } else {
+            childs = tree.getChildNodes(node);
+            childNode = childs[0];
+            if (childNode == null) 
+                tree.addNode(newNode, "add", node);
+            else                
+                tree.addNode(newNode, "before", childNode);
+            tree.beginEdit(newNode);
         }
         
     }
