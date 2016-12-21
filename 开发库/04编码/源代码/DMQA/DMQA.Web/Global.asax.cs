@@ -8,6 +8,7 @@ using System.Web.Routing;
 using DMQA.DataService.Service;
 using DMQA.DataService.Tool;
 using Ninject;
+using Scuec.Infrastructure.Web;
 
 namespace DMQA.Web
 {
@@ -32,6 +33,10 @@ namespace DMQA.Web
 
             //初始化映射模型
             AutoMapperExtention.InitializationMapper();
+
+            //初始化异常处理
+            var webExceptionConfig = new WebExceptionConfig();
+            webExceptionConfig.LoadConfig();
         }
 
         protected void AddBindings(IKernel ninjectKernel)
