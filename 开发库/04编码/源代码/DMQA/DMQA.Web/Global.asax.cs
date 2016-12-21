@@ -7,7 +7,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using DMQA.DataService.Service;
 using DMQA.DataService.Tool;
-using DMQA.Infrastructure.Ioc;
 using Ninject;
 
 namespace DMQA.Web
@@ -29,7 +28,7 @@ namespace DMQA.Web
         protected void Initialization()
         {
             //依赖注入
-            ControllerBuilder.Current.SetControllerFactory(new NinjectConfig(AddBindings));
+           // ControllerBuilder.Current.SetControllerFactory(new NinjectConfig(AddBindings));
 
             //初始化映射模型
             AutoMapperExtention.InitializationMapper();

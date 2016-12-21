@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using DMQA.DataService.Service;
 using DMQA.DataService.ViewModels;
-using DMQA.Infrastructure.Tool;
 
 namespace DMQA.Web.Controllers
 {
@@ -33,11 +32,11 @@ namespace DMQA.Web.Controllers
         /// <param name="nodeParams"></param>
         public void SaveUserInfos(string nodeParams)
         {
-            List<UserInfo> models = JsonUtil.JsonToObject(nodeParams, typeof(List<UserInfo>)) as List<UserInfo>;
-            if (models != null && models.Count > 0)
-            {
-                homeService.UpdateUserInfos(models);
-            }
+            //List<UserInfo> models = JsonUtil.JsonToObject(nodeParams, typeof(List<UserInfo>)) as List<UserInfo>;
+            //if (models != null && models.Count > 0)
+            //{
+            //    homeService.UpdateUserInfos(models);
+            //}
         }
 
         public ActionResult UserInfoManage()

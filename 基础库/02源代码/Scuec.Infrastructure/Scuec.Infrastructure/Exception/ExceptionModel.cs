@@ -16,6 +16,6 @@ namespace Scuec.Infrastructure
         public string Message { get; set; }
         /// <summary>异常明细(面向调用者)</summary>
         [DataMember(Name = "details")]
-        public string Detail { get; set; }
+        public string Details { get; set; }
     }
 }

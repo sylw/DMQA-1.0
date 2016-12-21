@@ -60,7 +60,7 @@ namespace Scuec.Infrastructure
                 model.Code = ex2.Code;
                 model.Message = ex2.FriendlyMessage;
             }
-            model.Detail = ex.Message;
+            model.Details = ex.Message;
             return model;
         }
     }
